@@ -1,0 +1,24 @@
+{# Import the theme's layout. #}
+{% extends "!layout.html" %}
+
+{# Custom CSS overrides #}
+{% set bootswatch_css_custom = ['_static/logo.css'] %}
+
+{# Custom JS overrides #}
+{% set script_files = script_files + ["_static/logo.js"] %}
+
+{%- block content %}
+{{ navBar() }}
+<div class="container">
+  {%- block sidebarlogo %}
+    {%- if logo %}<span class="shadow-background"><img src="{{ pathto('_static/' + logo, 1) }}"></span>{%- endif %}
+  {%- endblock %}
+  <div class="row">
+    {%- block sidebar1 %}{{ bsidebar() }}{% endblock %}
+    <div class="{{ bs_span_prefix }}{{ bs_content_width }} content">
+      {% block body %}{% endblock %}
+    </div>
+    {% block sidebar2 %} {# possible location for sidebar #} {% endblock %}
+  </div>
+</div>
+{%- endblock %}

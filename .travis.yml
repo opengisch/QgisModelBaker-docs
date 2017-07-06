@@ -1,0 +1,34 @@
+language: python
+
+addons:
+  apt:
+    packages:
+      - texlive-latex-recommended
+      - texlive-latex-extra
+      - texlive-fonts-recommended
+
+before_install:
+  - mkdir -p $HOME/texlive && curl -L https://github.com/urdh/texlive-blob/releases/download/20170106/texlive.tar.xz | tar -JxC $HOME/texlive
+
+install:
+# Sphinx requirements
+  - pip install -r requirements.txt
+# Latex requirements
+  - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
+  - tlmgr update --self
+  - tlmgr install combelow
+  - tlmgr install babel-french
+  - tlmgr install babel-german
+  - tlmgr install babel-romanian
+  - tlmgr install babel-italian
+  - tlmgr install babel-spanish
+
+before_script:
+  - ./scripts/ci/setup_git.sh
+  - ./scripts/ci/transifex_push.sh
+
+script:
+  - ./scripts/build-docs.sh
+
+after_success:
+  - ./scripts/ci/deploy-docs.sh

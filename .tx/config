@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[projectgenerator-documentation.projectgenerator-documentation]
+source_file = i18n/pot/index.pot
+file_filter = i18n/<lang>/index.po
+source_lang = en
+type = PO
