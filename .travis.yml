@@ -11,8 +11,6 @@ before_install:
   - mkdir -p $HOME/texlive && curl -L https://github.com/urdh/texlive-blob/releases/download/20170106/texlive.tar.xz | tar -JxC $HOME/texlive
 
 install:
-# Sphinx requirements
-  - pip install -r requirements.txt
 # Latex requirements
   - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
   - tlmgr update --self
@@ -22,6 +20,8 @@ install:
   - tlmgr install babel-romanian
   - tlmgr install babel-italian
   - tlmgr install babel-spanish
+# Sphinx requirements
+  - pip install -r requirements.txt
 
 before_script:
   - ./scripts/ci/setup_git.sh
