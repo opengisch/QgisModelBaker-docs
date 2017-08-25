@@ -118,7 +118,7 @@ html_theme_options = {
 }
 
 html_context = {
-  'source_link_github_project': "opengisch/Projectgenerator-docs",
+  'source_link_github_project': "opengisch/projectgenerator-docs",
 
   'source_link_github_branch': "master"
 }
