@@ -7,7 +7,7 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../..
 
 if test "$TRAVIS_SECURE_ENV_VARS" = "true" -a "$TRAVIS_BRANCH" = "master";
 then
-  echo "Publish docs to https://qfield.github.io/docs";
+  echo "Publish docs to https://projectgenerator.github.io/docs";
 
   pushd ${DIR}
   mkdir publish
