@@ -16,7 +16,7 @@ then
   mkdir -p projectgenerator/docs
   cd projectgenerator
   git rm docs -r || true
-  mkdir docs
+  mkdir docs || true
   cp ../../build/html/* docs/ -r
   git add -A
   git commit -m "Automatic doc update\n\nhttps://github.com/opengisch/projectgenerator-docs/commit/${TRAVIS_COMMIT}"
