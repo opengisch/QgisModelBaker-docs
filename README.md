@@ -7,9 +7,9 @@ Status](https://travis-ci.org/opengisch/projectgenerator-docs.svg)](https://trav
 
 The final product can be found here:
 
- * [Deutsch](https://github.io/todo/de)
- * [English](https://github.io/todo/en)
- * [Castellano](https://github.io/todo/es)
+ * [Castellano](https://opengisch.github.io/projectgenerator/docs/es)
+ * [Deutsch](https://opengisch.github.io/projectgenerator/docs/de)
+ * [English](https://opengisch.github.io/projectgenerator/docs/en)
 
 ## Process
 
