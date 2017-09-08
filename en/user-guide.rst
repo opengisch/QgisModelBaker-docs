@@ -27,40 +27,6 @@ Configuring QGIS layers and forms manually is a tedious and error prone process.
 
 Interlis models contain more information than a plain database schema. This plugin uses ili2pg to import an Interlis model into a PostgreSQL/PostGIS database and uses the additional meta information to configure the user interface even better.
 
-
-PLUGIN CONFIGURATION
-========================
-
-To start using the plugin, go to menu Database -> Project Generator -> Settings, where you can set:
-
- + **Custom Model Directories**:
-
-   In this window you can set one or several paths to let ili2db where to find your Interlis models (ili files). Paths can be both local directories or URLs to remote model repositories. Several paths should be separated by semicolons.
-
-   By default, ili2db uses `%ILI_FROM_DB;%XTF_DIR;http://models.interlis.ch/;%JAR_DIR`, where:
-
-    -  `%ILI_FROM_DB` is a placeholder for the models in the database (in table t_ili2db_model),
-    -  `%XTF_DIR` is a placeholder for the directory with the transfer file,
-    -  `%JAR_DIR` is a placeholder for the ili2db program (ili2pg.jar or ili2gpkg.jar file).
-
-
- + **Java Path**:
-
-   By default, Project Generator searches for Java executable in `%JAVA_HOME` environment variable. However, you can overwrite such behavior by setting a custom path to Java executable file in this window. This is useful, for instance, when environment variables are not well set and you have no rights to set them in your machine's operating system.
-
-
-|settings_1|
-
-|settings_2|
-
-
-|settings_3|
-
-|settings_4|
-
-|settings_5|
-
-
 GENERATE (Project)
 ==================
 
@@ -203,3 +169,34 @@ Set the password for the database user.
 **9.	Log Panel**
 This panel shows log messages of the whole process once Export button is clicked. It will show you what ili2pg command was executed (including parameters), as well as the ili2pg output.
 
+PLUGIN CONFIGURATION
+========================
+
+To start using the plugin, go to menu Database -> Project Generator -> Settings, where you can set:
+
+ + **Custom Model Directories**:
+
+   In this window you can set one or several paths to let ili2db where to find your Interlis models (ili files). Paths can be both local directories or URLs to remote model repositories. Several paths should be separated by semicolons.
+
+   By default, ili2db uses `%ILI_FROM_DB;%XTF_DIR;http://models.interlis.ch/;%JAR_DIR`, where:
+
+    -  `%ILI_FROM_DB` is a placeholder for the models in the database (in table t_ili2db_model),
+    -  `%XTF_DIR` is a placeholder for the directory with the transfer file,
+    -  `%JAR_DIR` is a placeholder for the ili2db program (ili2pg.jar or ili2gpkg.jar file).
+
+
+ + **Java Path**:
+
+   By default, Project Generator searches for Java executable in `%JAVA_HOME` environment variable. However, you can overwrite such behavior by setting a custom path to Java executable file in this window. This is useful, for instance, when environment variables are not well set and you have no rights to set them in your machine's operating system.
+
+
+|settings_1|
+
+|settings_2|
+
+
+|settings_3|
+
+|settings_4|
+
+|settings_5|
