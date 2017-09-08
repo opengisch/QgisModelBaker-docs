@@ -1,20 +1,20 @@
-==================================
-ARCHIVO DE AYUDA PROJECT GENERATOR
-==================================
+================================
+USER GUIDE FOR PROJECT GENERATOR
+================================
 
 :Author: Sergio Ramírez, Germán Carrillo
 :Date: Agosto 24, 2017
 
 .. contents::
 
-.. |configuracion_1| image:: images/configuracion_1.png
-.. |configuracion_2| image:: images/configuracion_2.png
-.. |configuracion_3| image:: images/configuracion_3.png
-.. |configuracion_4| image:: images/configuracion_4.png
-.. |configuracion_5| image:: images/configuracion_5.png
-.. |generar| image:: images/generar.png
-.. |importar| image:: images/importar.png
-.. |exportar| image:: images/exportar.png
+.. |settings_1| image:: images/settings_1.png
+.. |settings_2| image:: images/settings_2.png
+.. |settings_3| image:: images/settings_3.png
+.. |settings_4| image:: images/settings_4.png
+.. |settings_5| image:: images/settings_5.png
+.. |generate| image:: images/generate.png
+.. |import| image:: images/import.png
+.. |export| image:: images/export.png
 
 INTRODUCTION
 ============
@@ -49,16 +49,16 @@ To start using the plugin, go to menu Database -> Project Generator -> Settings,
    By default, Project Generator searches for Java executable in `%JAVA_HOME` environment variable. However, you can overwrite such behavior by setting a custom path to Java executable file in this window. This is useful, for instance, when environment variables are not well set and you have no rights to set them in your machine's operating system.
 
 
-|configuracion_1|
+|settings_1|
 
-|configuracion_2|
+|settings_2|
 
 
-|configuracion_3|
+|settings_3|
 
-|configuracion_4|
+|settings_4|
 
-|configuracion_5|
+|settings_5|
 
 
 GENERATE (Project)
@@ -69,7 +69,7 @@ To generate configured QGIS projects from Interlis models or PostgreSQL/PostGIS 
 Dialog options are described in the following lines (use numbers to locate specific options in the picture). 
 
 
-|generar|
+|generate|
 
 **1.	Generation Mode**
 Project Generator is able to generate QGIS projects from both Interlis models or PostgreSQL/PostGIS existing schemas. You should start using this list to choose what mode you want the plugin to work on.
@@ -133,7 +133,7 @@ To import data from Interlis Transfer Files (XTF) into PostgreSQL/PostGIS schema
 Dialog options are described in the following lines (use numbers to locate specific options in the picture). 
 
 
-|importar|
+|import|
 
 **1.	XTF File**
 Set source XTF file location. The XTF is an Interlis Transfer File, containing spatial and/or alphanumeric data. Usually, you generate XTF files running Export data to Interlis Transfer File (.xtf).
@@ -173,7 +173,7 @@ To export data from PostgreSQL/PostGIS schemas into Interlis Transfer Files (XTF
 
 Dialog options are described in the following lines (use numbers to locate specific options in the picture).  
 
-|exportar|
+|export|
 
 **1.	XTF File**
 Set the XTF file where you want to export your data to.
