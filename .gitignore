@@ -5,6 +5,7 @@ i18n
 *~
 *.mo
 i18n/pot
+.tx/config
 *.orig
 opengisch_rsa
 opengisch_rsa.pub
