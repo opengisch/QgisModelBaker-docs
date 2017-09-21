@@ -13,6 +13,9 @@ install:
 
 before_script:
   - ./scripts/ci/setup_git.sh
+  - make gettext
+  - mkdir .tx
+  - python ./scripts/ci/setup_transifex.py
   - ./scripts/ci/transifex_push.sh
 
 script:
