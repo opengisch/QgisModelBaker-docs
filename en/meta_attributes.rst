@@ -78,7 +78,7 @@ Used as the display expression of a Relation Reference Widget.
 |relation_reference|
 
 
-Extra Meta Attributes File
+Extra Model Information File
 ================================
 
 In these external files the meta attributes can be stored instead of having them directly in the Interlis files. 

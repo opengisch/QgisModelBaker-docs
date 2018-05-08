@@ -67,7 +67,7 @@ ili2db allows you to use three types of inheritance mapping: "noSmartMapping", "
 
  + **smart2inheritance** This kind of inheritance prefers to create children classes into the database. Attribute from parent classes will not be lost, since they are transferred into children ones.
  
-***Extra Meta Attributes File***
+***Extra Model Information File***
  
 A \*.toml file containing values for meta attributes (like dispExpression) instead of having them directly in the Interlis file. The file can be selected per model configuration.
 
