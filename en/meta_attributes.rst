@@ -22,7 +22,7 @@ An Interlis comment starts with ``!!`` and ends with a line end. An attribute st
 
 **Syntax**
 
-After the start of ``!!@`` the attribute name follows, then equal, then attributevalue:
+After the start of ``!!@`` the attribute name follows, then equal, then the attribute value:
 
 ::
 
@@ -42,7 +42,7 @@ Followed by the referenced element (MODEL, TOPIC, CLASS etc.)
 	  !!@ topicInformation="Route-Type"
 	  TOPIC TypeOfRouteCatalogue
 	  EXTENDS CatalogueObjects_V1.Catalogues =
-	    !!@ dispExpression="type||' sometext'"
+	    !!@ dispExpression="CONCAT(type, ' sometext')"
 	    CLASS TypeOfRoute
 	    EXTENDS CatalogueObjects_V1.Catalogues.Item =
 
@@ -53,20 +53,21 @@ For more complex usage see the `specification of the Verein eCH <https://www.ech
 Meta Attributes in the Database
 ------------------------------------------
 
-When importing the data from the Interlis file to the DB, with ili2db integrated in the Project Generator, the Meta Attributes are stored in the table **t_ili2db_meta_attrs**:
+When importing the data from the Interlis file to the DB, with ili2db integrated in the Project Generator, the meta attributes are stored in the table **t_ili2db_meta_attrs**:
 
 ===============================================================  ==================  ===========================
 ilielement                                                       attr_name           attr_value
 ===============================================================  ==================  ===========================
 ExceptionalLoadsCatalogues_V1                                    furtherInformation  https://www.astra.admin.ch/
 ExceptionalLoadsCatalogues_V1.TypeOfRouteCatalogue               topicInformation    Route-Type
-ExceptionalLoadsCatalogues_V1.TypeOfRouteCatalogue.TypeOfRoute   dispExpression      type||' sometext'
+ExceptionalLoadsCatalogues_V1.TypeOfRouteCatalogue.TypeOfRoute   dispExpression      CONCAT(type, ' sometext')
 ===============================================================  ==================  ===========================
+
 
 Project Generator Specific Attributes
 ================================================
 
-Some attributes the Project Generator can handle as properties in the QGIS project.
+Some additional non standard meta attributes are understood by the project generator as properties in the QGIS project.
 
 List of specific Attributes
 ------------------------------------------
@@ -76,23 +77,26 @@ Used as the display expression of a Relation Reference Widget.
 
 |relation_reference|
 
-**not more specific attributes yet**
-
 
 Extra Meta Attributes File
 ================================
 
 In these external files the meta attributes can be stored instead of having them directly in the Interlis files. 
 
-These files are written in the TOML and have the filename extension ``.toml``
+These files are written in TOML and have the filename extension ``.toml``
 
 You can select the extra meta attribute files in the **Advanced Options**. This configuration is stored for the model. Means when you reselect the model later again, the file is still referenced. This information will be displayed on the main dialog of the Project Generator.
 
-In the background the ili2pg writes the attributes from the external meta attribute file first to the Interlis file and then to the PostGIS or GeoPackage storage, where the Project Generator can use them to build the QGIS project.
+In the background ili2pg writes the attributes from the external meta attribute file to the PostGIS or GeoPackage storage, where the Project Generator can use them to build the QGIS project.
 
 **Example**
-
 ::
 
 	["ExceptionalLoadsCatalogues_V1.TypeOfRouteCatalogue.TypeOfRoute"]
-	dispExpression="type||' sometext'"
+	dispExpression="CONCAT(type, ' sometext')"
+
+**More simple example**
+::
+
+	["ExceptionalLoadsRoute.TypeOfRouteCatalogue.TypeOfRoute"]
+	dispExpression="type"
