@@ -69,7 +69,7 @@ ili2db allows you to use three types of inheritance mapping: "noSmartMapping", "
  
 ***Extra Meta Attributes File***
  
-A \*.toml file containing values for meta attributes (like dispExpression) instead of having them directly in the Interlis file. The file can be selected per module configuration.
+A \*.toml file containing values for meta attributes (like dispExpression) instead of having them directly in the Interlis file. The file can be selected per model configuration.
 
 
 **6.	Database Host**
