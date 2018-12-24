@@ -236,11 +236,11 @@ all-pdf: latex
 	do \
 	  make -C $(BUILDDIR)/latex/$$lang all-pdf ; \
 		if [ -d $(BUILDDIR)/html/$$lang ]; then \
-			cp -f $(BUILDDIR)/latex/$$lang/projectgenerator.pdf $(BUILDDIR)/html/$$lang ; \
+			cp -f $(BUILDDIR)/latex/$$lang/QgisModelBaker.pdf $(BUILDDIR)/html/$$lang ; \
 		fi \
 	done; \
 	if [ -d $(BUILDDIR)/html/$$lang ]; then \
-		cp -f $(BUILDDIR)/latex/en/projectgenerator.pdf $(BUILDDIR)/html; \
+		cp -f $(BUILDDIR)/latex/en/QgisModelBaker.pdf $(BUILDDIR)/html; \
 	fi; \
 
 all-ps: latex

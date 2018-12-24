@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Projectgenerator documentation build configuration file, created by
+# QGIS Model Baker documentation build configuration file, created by
 # sphinx-quickstart on Tue Jul 28 13:28:43 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -44,8 +44,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Projectgenerator Documentation'
-copyright = u'2017, The Projectgenerator Project/OPENGIS.ch'
+project = u'QGIS Model Baker Documentation'
+copyright = u'2017, The QGIS Model Baker Project/OPENGIS.ch'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -118,7 +118,7 @@ html_theme_options = {
 }
 
 html_context = {
-  'source_link_github_project': "opengisch/projectgenerator-docs",
+  'source_link_github_project': "opengisch/QgisModelBaker-docs",
 
   'source_link_github_branch': "master"
 }
@@ -134,12 +134,12 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = '_static/projectgenerator-logo.svg'
+html_logo = '_static/QgisModelBaker-logo.svg'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = '_static/projectgenerator-logo-noborder.ico'
+html_favicon = '_static/QgisModelBaker-logo-noborder.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -196,7 +196,7 @@ html_sidebars = {
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Projectgeneratordoc'
+htmlhelp_basename = 'QGIS Model Bakerdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -228,8 +228,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'Projectgenerator.tex', u'Projectgenerator Documentation',
-   u'The Projectgenerator Project/OPENGIS.ch', 'manual'),
+  ('index', 'QGIS Model Baker.tex', u'QGIS Model Baker Documentation',
+   u'The QGIS Model Baker Project/OPENGIS.ch', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -258,8 +258,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'Projectgenerator', u'Projectgenerator Documentation',
-     [u'The Projectgenerator Project/OPENGIS.ch'], 1)
+    ('index', 'QGIS Model Baker', u'QGIS Model Baker Documentation',
+     [u'The QGIS Model Baker Project/OPENGIS.ch'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -272,8 +272,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'Projectgenerator', u'QGIS Projectgenetator Documentation',
-   u'The Projectgenerator Project/OPENGIS.ch', 'Projectgenerator', 'Create QGIS Project files directly from an existing postgres database or Interlis model.',
+  ('index', 'QGIS Model Baker', u'QGIS Projectgenetator Documentation',
+   u'The QGIS Model Baker Project/OPENGIS.ch', 'QGIS Model Baker', 'Create QGIS Project files directly from an existing postgres database or Interlis model.',
    'Miscellaneous'),
 ]
 
@@ -295,7 +295,7 @@ locale_dirs = ['../i18n']
 # mkuhn: Configure edit_on_github extension, source:
 # https://gist.github.com/MantasVaitkunas/7c16de233812adcb7028
 
-edit_on_github_project = 'opengisch/projectgenerator-docs'
+edit_on_github_project = 'opengisch/QgisModelBaker-docs'
 edit_on_github_branch = 'master'
 
 # mkuhn: Add custom css

@@ -1,21 +1,21 @@
-# Projectgenerator Documentation
+# QGIS Model Baker Documentation
 
 [![Build
-Status](https://travis-ci.org/opengisch/projectgenerator-docs.svg)](https://travis-ci.org/opengisch/projectgenerator-docs)
+Status](https://travis-ci.org/opengisch/QgisModelBaker-docs.svg)](https://travis-ci.org/opengisch/QgisModelBaker-docs)
 
 ## Resources
 
 The final product can be found here:
 
- * [Castellano](https://opengisch.github.io/projectgenerator/docs/es)
- * [Deutsch](https://opengisch.github.io/projectgenerator/docs/de)
- * [English](https://opengisch.github.io/projectgenerator/docs/en)
+ * [Castellano](https://opengisch.github.io/QgisModelBaker/docs/es)
+ * [Deutsch](https://opengisch.github.io/QgisModelBaker/docs/de)
+ * [English](https://opengisch.github.io/QgisModelBaker/docs/en)
 
 ## Process
 
 The documentation is written in English and managed in this git repository.
 The latest version of the documentation is automatically built (on [Travis
-CI](https://travis-ci.org/opengisch/projectgenerator-docs)) and published on the links
+CI](https://travis-ci.org/opengisch/QgisModelBaker-docs)) and published on the links
 above.
 
 Translation is done via transifex. The latest translations are pulled and built
@@ -24,7 +24,7 @@ functionality](https://docs.travis-ci.com/user/cron-jobs/)).
 
 ## Contributing
 
-Projectgenerator is a community driven open source project. As such we are very happy to
+QGIS Model Baker is a community driven open source project. As such we are very happy to
 get your help and feedback.
 
 Therefore we appreciate if you can help us by
@@ -37,7 +37,7 @@ Therefore we appreciate if you can help us by
 
 *Note: You will need a [github account](https://github.com/) for this.*
 
-Navigate to https://github.com/opengisch/projectgenerator-docs/ and click the `Fork` link on the top
+Navigate to https://github.com/opengisch/QgisModelBaker-docs/ and click the `Fork` link on the top
 right. You now have your own copy of the documentation on which you can work
 and cannot do any damage, feel free to experiment.
 If you want more information about forking you can find it
@@ -59,7 +59,7 @@ request](https://help.github.com/articles/using-pull-requests/).
 *Note: You will need to have a [transifex account](https://transifex.com/) for this.*
 
 Navigate to our [transifex
-project](https://www.transifex.com/organization/opengisch/dashboard/projectgenerator-documentation)
+project](https://www.transifex.com/organization/opengisch/dashboard/QgisModelBaker-documentation)
 and click on the language you would like to translate. You will see a link
 `Join Team`. Click it and wait for approval (you will receive an email).
 
@@ -69,5 +69,5 @@ documentation chapter to translate. There is a `Translate` button after
 choosing a chapter.
 
 If your language is not yet available, we will happily add it for you. Just
-[open an issue](https://github.com/opengisch/projectgenerator-docs/g/issues/new) and tell us which
+[open an issue](https://github.com/opengisch/QgisModelBaker-docs/g/issues/new) and tell us which
 language you would like to translate it to.

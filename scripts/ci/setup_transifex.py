@@ -27,7 +27,7 @@ dir = 'i18n/pot/'
 def print_file_section(filename):
     with open('.tx/config', 'a') as tx_file:
         tx_file.write('\n')
-        tx_file.write('[projectgenerator-documentation.{}]\n'.format(filename))
+        tx_file.write('[QgisModelBaker-documentation.{}]\n'.format(filename))
         tx_file.write('file_filter = i18n/<lang>/{}.po\n'.format(filename))
         tx_file.write('source_file = i18n/pot/{}.pot\n'.format(filename))
         tx_file.write('source_lang = en\n')
