@@ -1,7 +1,7 @@
 Get Started
 ===========
 
-1. Install QGIS 3 from either OSGeo4W or a source suitable for your platform.
+1. `Install QGIS 3 <https://qgis.org/en/site/forusers/download.html>`_.
 
 2. Use the plugin manager to install the QgsProjectGenerator plugin
 
