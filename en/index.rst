@@ -1,7 +1,7 @@
-QGIS Model Baker for QGIS
-=========================
+QGIS Model Baker
+================
 
-QGIS QGIS Model Baker is a QGIS plugin for QGIS 3.
+QGIS Model Baker is a plugin for QGIS 3.
 
 It reduces the initial configuration effort for QGIS project files by reading
 information from postgres databases or Interlis files.
